@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerebro Feliz | Psicología, Estimulación & Tienda Lúdica Infantil</title>
+  <meta name="description" content="Cerebro Feliz - Learning Center & Therapy. Materiales didácticos y sensoriales seleccionados por la Psicóloga Sharon Espinel para el neurodesarrollo y la salud emocional infantil. Pedidos directos a WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/cerebro-feliz-logo.jpg">
+</head>
+<body>
+  <!-- Top announcement bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <span class="icon">🧠</span>
+        <span>Asesoría psicológica y de estimulación con la <strong>Psic. Sharon Espinel</strong></span>
+      </div>
+      <div class="top-bar-actions">
+        <button id="open-share-guide-btn" class="text-btn">
+          <span>🚀 ¿Cómo compartir este demo por link?</span>
+        </button>
+        <button id="open-settings-btn" class="settings-pill-btn" title="Configurar número de WhatsApp">
+          <span class="icon">⚙️</span>
+          <span>Configurar WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" id="brand-logo">
+        <img src="assets/img/cerebro-feliz-logo.jpg" alt="Logo Cerebro Feliz - Learning Center & Therapy" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">Cerebro <span>Feliz</span></span>
+          <span class="brand-subtitle">Learning Center & Therapy</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#psicologa" class="nav-link">Psic. Sharon Espinel</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="header-contact-btn" class="btn btn-outline-whatsapp">
+          <svg class="wa-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.232.003.332.008c.107.006.25.04.385.367.144.348.492 1.2.535 1.287.043.087.072.189.014.305-.058.116-.087.189-.174.29-.087.102-.183.228-.261.306-.088.087-.179.182-.077.357.101.174.449.742.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.102-.116.434-.508.55-.682.115-.174.231-.145.39-.087s1.013.477 1.186.564.289.13.332.203c.044.073.044.42-.1 1.025z"/>
+          </svg>
+          <span class="hide-mobile">Hablar con Sharon</span>
+        </button>
+
+        <button id="open-cart-btn" class="cart-trigger-btn" aria-label="Abrir carrito de compras">
+          <div class="cart-icon-wrapper">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-badge" id="cart-counter">0</span>
+          </div>
+          <span class="cart-text hide-mobile">Mi Carrito</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text-content">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          <span>Material Terapéutico & Estimulación Infantil</span>
+        </div>
+        <h1 class="hero-title">
+          Juguetes pensados para <span class="highlight">estimular la mente</span> y las emociones de tu peque
+        </h1>
+        <p class="hero-description">
+          Materiales lúdicos, sensoriales y de neurodesarrollo seleccionados con criterio psicológico por la <strong>Psic. Sharon Espinel</strong>. Fomentan la autorregulación, la concentración y el aprendizaje sin sobreestimulación digital.
+        </p>
+
+        <div class="hero-features-list">
+          <div class="hero-feature-item">
+            <span class="feature-icon">🌿</span>
+            <span>Madera natural y pinturas no tóxicas</span>
+          </div>
+          <div class="hero-feature-item">
+            <span class="feature-icon">🧠</span>
+            <span>Fundamento en psicología del desarrollo</span>
+          </div>
+          <div class="hero-feature-item">
+            <span class="feature-icon">💬</span>
+            <span>Pides directo al WhatsApp de Sharon (319 429 8413)</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#catalogo" class="btn btn-primary btn-lg">
+            <span>Explorar Material Didáctico</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#psicologa" class="btn btn-secondary btn-lg">
+            <span>Conoce a Sharon Espinel</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="hero-badge-floating floating-1">
+          <span class="badge-emoji">🧠</span>
+          <div>
+            <strong>Cerebro Feliz</strong>
+            <small>Learning & Therapy</small>
+          </div>
+        </div>
+        <div class="hero-badge-floating floating-2">
+          <span class="badge-emoji">⭐</span>
+          <div>
+            <strong>Psic. Sharon Espinel</strong>
+            <small>Asesoría personalizada</small>
+          </div>
+        </div>
+        <div class="hero-img-frame">
+          <img src="assets/img/bloques-arcoiris.jpg" alt="Material sensorial y didáctico para niños" class="hero-main-img">
+          <div class="hero-img-caption">
+            <span class="caption-tag">Neurodesarrollo & Terapia</span>
+            <p>Juego consciente que potencia la concentración y la creatividad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Catalog Section -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Colección Seleccionada</span>
+        <h2 class="section-title">Productos Lúdicos con Propósito</h2>
+        <p class="section-subtitle">
+          Filtra por área de desarrollo o rango de edad para encontrar el material adecuado para el momento evolutivo de tu niño/a.
+        </p>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div class="catalog-controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Buscar por nombre o beneficio (ej. motricidad, números)...">
+          <button id="clear-search-btn" class="clear-search-btn" title="Limpiar búsqueda" style="display: none;">×</button>
+        </div>
+
+        <!-- Age Filter Pills -->
+        <div class="filter-group">
+          <span class="filter-label">Edad sugerida:</span>
+          <div class="filter-pills" id="age-filter-pills">
+            <button class="pill active" data-age="all">Todas</button>
+            <button class="pill" data-age="1-3">1 a 3 años</button>
+            <button class="pill" data-age="3-5">3 a 5 años</button>
+            <button class="pill" data-age="5+">5+ años</button>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-group">
+          <span class="filter-label">Área pedagógica:</span>
+          <div class="filter-pills" id="category-filter-pills">
+            <button class="pill active" data-category="all">✨ Todos los materiales</button>
+            <button class="pill" data-category="sensorial">🖐️ Sensorial & Montessori</button>
+            <button class="pill" data-category="motricidad">🤲 Motricidad Fina</button>
+            <button class="pill" data-category="cognitivo">🔢 Lógica & Conteo</button>
+            <button class="pill" data-category="emociones">💛 Educación Emocional</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Empty state if no matches -->
+      <div id="no-products-message" class="empty-results-box" style="display: none;">
+        <span class="empty-icon">🔎</span>
+        <h3>No encontramos productos con ese filtro</h3>
+        <p>Prueba buscando otra palabra clave o restablece los filtros para ver todo el catálogo.</p>
+        <button id="reset-filters-btn" class="btn btn-secondary">Ver todos los productos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Psicóloga Section -->
+  <section class="pedagogue-section" id="psicologa">
+    <div class="container pedagogue-container">
+      <div class="pedagogue-image-wrapper">
+        <div class="pedagogue-image-card">
+          <img src="assets/img/sharon-profesional.jpg" alt="Psicóloga Sharon Espinel - Directora Cerebro Feliz" class="pedagogue-img">
+          <div class="pedagogue-card-floating">
+            <span class="verified-icon">🧠</span>
+            <div>
+              <strong>Sharon Espinel</strong>
+              <small>Psicóloga de Profesión | Cerebro Feliz</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pedagogue-content">
+        <span class="section-tag">Detrás de Cerebro Feliz</span>
+        <h2 class="section-title">"El juego activo y consciente es la vía más potente para estructurar el cerebro y las emociones infantiles."</h2>
+        <p class="pedagogue-lead">
+          ¡Hola! Soy <strong>Sharon Espinel</strong>, psicóloga de profesión y fundadora de <strong>Cerebro Feliz (Learning Center & Therapy)</strong>. Creé este catálogo para brindar a padres, madres y educadores herramientas terapéuticas y lúdicas con verdadero rigor clínico y evolutivo.
+        </p>
+        <p class="pedagogue-body">
+          En un entorno lleno de pantallas y sobreestimulación pasiva, los niños necesitan materiales tangibles que desafíen su curiosidad, entrenen su control de impulsos y fortalezcan su lenguaje y habilidades socioemocionales. Aquí cada juguete tiene una función formativa clara.
+        </p>
+
+        <div class="pedagogue-values">
+          <div class="value-item">
+            <span class="val-icon">🌱</span>
+            <div>
+              <h4>Respeto al neurodesarrollo</h4>
+              <p>Cada material responde a la etapa psicológica madurativa de cada niño, sin sobreexigencia y con afecto.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="val-icon">💬</span>
+            <div>
+              <h4>Orientación profesional directa</h4>
+              <p>¿No estás seguro de qué material necesita tu peque? Escríbeme a WhatsApp y analizamos juntos sus necesidades.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pedagogue-cta-box">
+          <button id="pedagogue-chat-btn" class="btn btn-primary">
+            <span>Escribirle a Sharon por WhatsApp</span>
+            <span class="icon">💬</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pedagogical Benefits Section -->
+  <section class="benefits-section" id="beneficios">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Por Qué Elegirnos</span>
+        <h2 class="section-title">El Valor del Material Didáctico con Asesoría</h2>
+        <p class="section-subtitle">No es solo vender un juguete, es acompañar el crecimiento de tu familia.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon-box">🧠</div>
+          <h3>Curaduría Pedagógica</h3>
+          <p>Ningún artículo ingresa a la tienda por moda; todos tienen un propósito de estimulación comprobado.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-box">📲</div>
+          <h3>Compra Rápida y Humana</h3>
+          <p>Armas tu carrito y con 1 clic se genera tu pedido estructurado a WhatsApp para atenderte de inmediato.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-box">🧸</div>
+          <h3>Materiales Durables y Seguros</h3>
+          <p>Madera ecológica, acabados suaves y tintas al agua aptas para la exploración táctil de los más pequeños.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-box">💡</div>
+          <h3>Guía de Uso para Padres</h3>
+          <p>Cada producto incluye sugerencias prácticas de dinámicas de juego guiado y juego libre en el hogar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Dudas Frecuentes</span>
+        <h2 class="section-title">¿Cómo Funciona el Proceso de Compra?</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>¿Cómo funciona el pedido a través de WhatsApp?</span>
+            <span class="faq-chevron">▾</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Es muy sencillo y transparente: seleccionas los artículos deseados en el catálogo, ingresas tu nombre y datos básicos en el carrito, y al presionar "Enviar Pedido a WhatsApp", el sistema te abre automáticamente WhatsApp con un mensaje redactado con la lista detallada, precios y total. La psicóloga Sharon Espinel te responderá personalmente confirmando stock, datos de envío y métodos de pago.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿Qué medios de pago se manejan?</span>
+            <span class="faq-chevron">▾</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Aceptamos transferencias bancarias directas (Bancolombia, Nequi, Daviplata, PSE) y opciones contra entrega según la cobertura de tu municipio.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿Sharon puede recomendarme productos según la etapa de mi hijo/a?</span>
+            <span class="faq-chevron">▾</span>
+          </summary>
+          <div class="faq-answer">
+            <p>¡Sí, es el valor diferencial de Cerebro Feliz! Al finalizar tu pedido puedes escribir en las notas la edad e intereses del niño, o puedes hacer clic en el botón de WhatsApp para recibir orientación psicológica y de estimulación temprana sin costo.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>¿Hacen envíos a todo el país?</span>
+            <span class="faq-chevron">▾</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí, realizamos envíos nacionales con empresas de mensajería certificadas. El costo de envío se calcula según tu ciudad o municipio y Sharon te lo informará directamente en el chat.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <img src="assets/img/cerebro-feliz-logo.jpg" alt="Logo Cerebro Feliz" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title">Cerebro <span>Feliz</span></span>
+            <span class="brand-subtitle">Learning Center & Therapy</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Centro de estimulación y tienda terapéutica infantil dirigida por la <strong>Psic. Sharon Espinel</strong>. Diseñada para acompañar a las familias con materiales significativos que potencian el neurodesarrollo.
+        </p>
+        <div class="footer-meta-pill">
+          <span>WhatsApp de Sharon: </span>
+          <strong id="footer-wa-display">+57 319 429 8413</strong>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Áreas de Estimulación</h4>
+        <ul class="footer-links">
+          <li><a href="#catalogo" data-quick-cat="sensorial">Sensorial & Montessori</a></li>
+          <li><a href="#catalogo" data-quick-cat="motricidad">Motricidad Fina</a></li>
+          <li><a href="#catalogo" data-quick-cat="cognitivo">Lógica & Conteo</a></li>
+          <li><a href="#catalogo" data-quick-cat="emociones">Educación Emocional</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#catalogo">Catálogo de Materiales</a></li>
+          <li><a href="#psicologa">Psic. Sharon Espinel</a></li>
+          <li><a href="#beneficios">¿Por qué Cerebro Feliz?</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Atención y Pedidos</h4>
+        <p class="footer-info-text">
+          Lunes a Sábado: 8:00 AM – 6:30 PM<br>
+          Envíos a todo el país 📦<br>
+          WhatsApp: <strong>319 429 8413</strong>
+        </p>
+        <button id="footer-order-btn" class="btn btn-whatsapp-full">
+          <span>Hablar con Sharon</span>
+          <span class="icon">💬</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Cerebro Feliz - Learning Center & Therapy | Psic. Sharon Espinel. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <button id="footer-open-share-guide" class="text-link">¿Cómo publicar este link?</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SLIDE-OVER DRAWER -->
+  <div class="drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" role="dialog">
+    <!-- 1. Drawer Header (Fixed at top) -->
+    <div class="drawer-header">
+      <div class="drawer-header-info">
+        <h3 id="cart-title">Tu Carrito Didáctico</h3>
+        <span class="drawer-items-count" id="drawer-items-count">0 productos</span>
+      </div>
+      <button class="drawer-close-btn" id="close-cart-btn" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <!-- 2. Scrollable Middle Area (Products list + Customer Form) -->
+    <div class="drawer-body" id="drawer-scrollable-body">
+      <!-- Items container dynamically populated with rows -->
+      <div class="cart-items-container" id="cart-items-container">
+        <div class="cart-empty-state" id="cart-empty-state">
+          <div class="empty-cart-illustration">🛒</div>
+          <h4>Tu carrito está vacío</h4>
+          <p>Aún no has agregado juguetes didácticos. Explora nuestro catálogo y selecciona los ideales para tus pequeños.</p>
+          <button class="btn btn-secondary" id="empty-cart-explore-btn">Explorar Catálogo</button>
+        </div>
+      </div>
+
+      <!-- Customer info form inside the scrollable area -->
+      <div class="checkout-form-box" id="drawer-form-box" style="display: none;">
+        <h4 class="form-title">
+          <span>📝 Datos para tu pedido</span>
+          <small>Se incluirán en el mensaje que le llegará a Mariana por WhatsApp</small>
+        </h4>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="cust-name">Tu Nombre y Apellido *</label>
+            <input type="text" id="cust-name" placeholder="Ej. Camila Morales" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="cust-city">Ciudad / Municipio de entrega *</label>
+            <input type="text" id="cust-city" placeholder="Ej. Medellín, Cali, Bogotá..." required>
+          </div>
+          <div class="form-group">
+            <label for="cust-kid">Nombre y edad del niño/a (opcional)</label>
+            <input type="text" id="cust-kid" placeholder="Ej. Sofía (3 años)">
+            <small class="helper-text">Para que la pedagoga te brinde recomendaciones según su etapa 💛</small>
+          </div>
+          <div class="form-group">
+            <label for="cust-notes">Consulta o nota pedagógica (opcional)</label>
+            <input type="text" id="cust-notes" placeholder="Ej. ¿Viene listo para regalo?">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Drawer Footer (Pinned at bottom, ALWAYS visible!) -->
+    <div class="drawer-checkout-section drawer-footer" id="drawer-checkout-section" style="display: none;">
+      <div class="cart-totals-box">
+        <div class="total-row total-highlight">
+          <span>Total en productos:</span>
+          <strong id="cart-total-price">$0</strong>
+        </div>
+        <div class="total-row fee-row">
+          <span>Envío:</span>
+          <span class="badge-shipping">Cotizado en WhatsApp según municipio</span>
+        </div>
+      </div>
+
+      <button id="checkout-whatsapp-btn" class="btn btn-whatsapp-cta btn-full">
+        <svg class="wa-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.232.003.332.008c.107.006.25.04.385.367.144.348.492 1.2.535 1.287.043.087.072.189.014.305-.058.116-.087.189-.174.29-.087.102-.183.228-.261.306-.088.087-.179.182-.077.357.101.174.449.742.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.102-.116.434-.508.55-.682.115-.174.231-.145.39-.087s1.013.477 1.186.564.289.13.332.203c.044.073.044.42-.1 1.025z"/>
+        </svg>
+        <span>Enviar Pedido a WhatsApp</span>
+      </button>
+
+      <p class="safe-checkout-note">
+        🔒 Te atenderá directamente la especialista para validar disponibilidad y pago.
+      </p>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAIL / PEDAGOGICAL CARD MODAL -->
+  <div class="modal-overlay" id="product-modal-overlay"></div>
+  <div class="modal" id="product-modal" role="dialog" aria-modal="true">
+    <button class="modal-close-btn" id="close-product-modal-btn">×</button>
+    <div class="product-modal-content" id="product-modal-body">
+      <!-- Dynamic modal info -->
+    </div>
+  </div>
+
+  <!-- SETTINGS MODAL (WhatsApp Phone Configuration) -->
+  <div class="modal-overlay" id="settings-modal-overlay"></div>
+  <div class="modal modal-sm" id="settings-modal" role="dialog" aria-modal="true">
+    <button class="modal-close-btn" id="close-settings-modal-btn">×</button>
+    <div class="settings-modal-inner">
+      <div class="modal-header-icon">⚙️</div>
+      <h3>Configurar Teléfono de WhatsApp</h3>
+      <p>Modifica el número de destino para que todos los pedidos del carrito lleguen directo a tu propio WhatsApp o al de tu cliente.</p>
+
+      <form id="wa-settings-form">
+        <div class="form-group">
+          <label for="wa-input-phone">Número con código de país (sin + ni espacios):</label>
+          <div class="input-with-prefix">
+            <span class="input-prefix">📞</span>
+            <input type="tel" id="wa-input-phone" placeholder="Ej. 573194298413" required pattern="[0-9]{8,15}">
+          </div>
+          <small class="helper-text">Ejemplo Colombia: 573194298413 (Sharon Espinel) | México: 5215512345678</small>
+        </div>
+
+        <div class="settings-modal-actions">
+          <button type="submit" class="btn btn-primary btn-full">Guardar Número</button>
+          <button type="button" class="btn btn-secondary btn-full" id="reset-phone-btn">Restablecer (319 429 8413)</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SHARE GUIDE MODAL (How to show the client via a link) -->
+  <div class="modal-overlay" id="share-modal-overlay"></div>
+  <div class="modal modal-md" id="share-modal" role="dialog" aria-modal="true">
+    <button class="modal-close-btn" id="close-share-modal-btn">×</button>
+    <div class="share-modal-inner">
+      <div class="modal-header-icon">🌐</div>
+      <h3>¿Cómo mostrarle esta tienda a Sharon Espinel mediante un link?</h3>
+      <p class="share-lead">
+        Para que Sharon o tu cliente pueda abrir y probar esta tienda interactiva desde su celular o computador, tienes <strong>3 opciones gratuitas y súper rápidas</strong>:
+      </p>
+
+      <div class="deployment-options-list">
+        <div class="deploy-option-card recommended">
+          <div class="deploy-tag">Opción 1 (Más Rápida - 1 Minuto)</div>
+          <h4>🎈 Netlify Drop (Arrastrar y Soltar)</h4>
+          <ol>
+            <li>Entra en tu navegador a: <code>app.netlify.com/drop</code> (o netlify.com)</li>
+            <li>Arrastra la carpeta del proyecto <code>ludikids-tienda</code> sobre la ventana.</li>
+            <li>¡Listo! Netlify te da al instante un enlace público seguro (ej: <code>https://ludikids-demo.netlify.app</code>) que puedes enviar por WhatsApp a tu cliente.</li>
+          </ol>
+        </div>
+
+        <div class="deploy-option-card">
+          <div class="deploy-tag">Opción 2 (Vercel)</div>
+          <h4>▲ Vercel CLI o Dashboard</h4>
+          <p>Ejecuta en la carpeta <code>npx vercel</code> o importa la carpeta en vercel.com para obtener un link instantáneo <code>https://tienda-pedagoga.vercel.app</code>.</p>
+        </div>
+
+        <div class="deploy-option-card">
+          <div class="deploy-tag">Opción 3 (GitHub Pages)</div>
+          <h4>🐙 GitHub Pages</h4>
+          <p>Sube el proyecto a un repositorio en GitHub y activa GitHub Pages en Configuración (Settings -> Pages). Tu link será <code>https://tuusuario.github.io/tienda-pedagoga</code>.</p>
+        </div>
+      </div>
+
+      <div class="share-modal-footer">
+        <button id="close-share-guide-btn-action" class="btn btn-primary btn-full">¡Entendido! Volver a la Tienda</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a href="#" id="floating-wa-btn" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Consultar por WhatsApp">
+    <span class="floating-wa-tooltip">¿Preguntas sobre un material? Escríbenos</span>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.232.003.332.008c.107.006.25.04.385.367.144.348.492 1.2.535 1.287.043.087.072.189.014.305-.058.116-.087.189-.174.29-.087.102-.183.228-.261.306-.088.087-.179.182-.077.357.101.174.449.742.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.102-.116.434-.508.55-.682.115-.174.231-.145.39-.087s1.013.477 1.186.564.289.13.332.203c.044.073.044.42-.1 1.025z"/>
+    </svg>
+  </a>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span class="toast-icon" id="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Producto agregado al carrito</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
