@@ -1,0 +1,17 @@
+name = "tienda-cerebro-feliz"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+# Base de datos D1 (reemplaza el database_id por el tuyo; ver README)
+[[d1_databases]]
+binding = "DB"
+database_name = "tienda-db"
+database_id = "REEMPLAZA-CON-EL-ID-DE-TU-BASE-D1"
+
+# KV para las fotos (reemplaza el id por el tuyo; ver README)
+[[kv_namespaces]]
+binding = "FOTOS"
+id = "REEMPLAZA-CON-EL-ID-DE-TU-KV"
+
+# ADMIN_PASSWORD NO va aquí: se agrega como secreto en Cloudflare
+# (y en el archivo .dev.vars para pruebas locales).

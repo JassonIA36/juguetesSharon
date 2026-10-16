@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Panel de administración</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Entrada con contraseña -->
+  <main id="login-view" class="login-view" hidden>
+    <form id="login-form" class="login-card">
+      <div class="login-icon">🔐</div>
+      <h1>Panel de la tienda</h1>
+      <p>Escribe tu contraseña para administrar los productos.</p>
+      <label for="login-password">Contraseña</label>
+      <input type="password" id="login-password" autocomplete="current-password" required>
+      <p class="form-error" id="login-error" role="alert" hidden></p>
+      <button type="submit" class="btn btn-primary btn-full" id="login-btn">Entrar</button>
+      <a href="/" class="login-back">← Volver a la tienda</a>
+    </form>
+  </main>
+
+  <!-- Panel -->
+  <div id="panel-view" hidden>
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <strong class="admin-title" id="admin-title">Panel de la tienda</strong>
+        <div class="admin-header-actions">
+          <a href="/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Ver tienda</a>
+          <button type="button" class="btn btn-secondary btn-sm" id="logout-btn">Cerrar sesión</button>
+        </div>
+      </div>
+      <nav class="admin-tabs" id="admin-tabs">
+        <button class="admin-tab active" data-tab="productos">🧸 Productos</button>
+        <button class="admin-tab" data-tab="categorias">🗂️ Categorías</button>
+        <button class="admin-tab" data-tab="tienda">⚙️ Mi tienda</button>
+      </nav>
+    </header>
+
+    <main class="admin-main">
+      <section id="tab-productos">
+        <div class="admin-toolbar">
+          <h2>Productos</h2>
+          <button type="button" class="btn btn-primary" id="new-product-btn">+ Nuevo producto</button>
+        </div>
+        <p class="admin-help">Usa las flechas para cambiar el orden en que se ven en la tienda.</p>
+        <div id="product-list" class="product-list"></div>
+      </section>
+
+      <section id="tab-categorias" hidden>
+        <div class="admin-toolbar"><h2>Categorías</h2></div>
+        <form id="new-category-form" class="inline-form">
+          <input type="text" id="new-category-name" placeholder="Nombre de la nueva categoría" maxlength="60" required>
+          <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+        <div id="category-list" class="category-list"></div>
+      </section>
+
+      <section id="tab-tienda" hidden>
+        <div class="admin-toolbar"><h2>Mi tienda</h2></div>
+        <form id="config-form" class="admin-card form-stack"></form>
+      </section>
+    </main>
+  </div>
+
+  <!-- Formulario de producto -->
+  <div class="sheet-overlay" id="sheet-overlay" hidden></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <form id="product-form" class="sheet-inner"></form>
+  </div>
+
+  <div id="toast" class="admin-toast" role="status" aria-live="polite"></div>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
