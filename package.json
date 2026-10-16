@@ -1,0 +1,11 @@
+{
+  "name": "tienda-cerebro-feliz",
+  "private": true,
+  "scripts": {
+    "db:local": "wrangler d1 execute DB --local --file=schema.sql",
+    "dev": "npm run db:local && wrangler pages dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

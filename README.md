@@ -36,8 +36,18 @@ npx wrangler d1 execute DB --local --file=schema.sql
 npx wrangler pages dev
 ```
 
+O, con un solo comando (crea las tablas y arranca): `npm install` y luego `npm run dev`.
+
 Abre <http://localhost:8788> (tienda) y <http://localhost:8788/admin> (panel).
 En local, D1 y KV se simulan en la carpeta `.wrangler/` y no tocan tu cuenta de Cloudflare.
+
+### Si no abre en local
+
+- **No abras `index.html` con doble clic ni con Live Server:** la tienda necesita el API, que solo existe con `npx wrangler pages dev` (o `npm run dev`). Entra por <http://localhost:8788>.
+- Ejecuta los comandos **dentro de la carpeta del proyecto** (donde está `wrangler.toml`).
+- Si dice «No pudimos cargar los productos», faltó crear las tablas: ejecuta el paso 2.
+- Si el puerto 8788 está ocupado por una ejecución anterior, ciérrala (Ctrl+C) o usa `npx wrangler pages dev --port 8790`.
+- Si el panel no te deja entrar, revisa que exista `.dev.vars` con `ADMIN_PASSWORD=...` y reinicia el comando.
 
 ---
 
