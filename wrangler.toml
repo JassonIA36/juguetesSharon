@@ -6,12 +6,12 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "DB"
 database_name = "tienda-db"
-database_id = "REEMPLAZA-CON-EL-ID-DE-TU-BASE-D1"
+database_id = "1b764239-bf0c-4a3c-94ed-1477b25d90e1"
 
 # KV para las fotos (reemplaza el id por el tuyo; ver README)
 [[kv_namespaces]]
 binding = "FOTOS"
-id = "REEMPLAZA-CON-EL-ID-DE-TU-KV"
+id = "ee576987c7ae4539beeb4791b91d21ea"
 
 # ADMIN_PASSWORD NO va aquí: se agrega como secreto en Cloudflare
 # (y en el archivo .dev.vars para pruebas locales).
