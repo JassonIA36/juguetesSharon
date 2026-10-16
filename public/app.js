@@ -74,11 +74,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
   applyConfig();
+  showAdminShortcut();
   renderCategories();
   pruneCart();
   renderProducts();
   updateCartUI();
 });
+
+// Si hay sesión de administrador abierta, muestra el acceso directo al panel.
+async function showAdminShortcut() {
+  try {
+    const res = await fetch('/api/sesion', { credentials: 'same-origin' });
+    $('admin-pill').hidden = !res.ok;
+  } catch (e) { /* sin acceso: no se muestra */ }
+}
 
 // ---------- Configuración de la tienda ----------
 function applyConfig() {
